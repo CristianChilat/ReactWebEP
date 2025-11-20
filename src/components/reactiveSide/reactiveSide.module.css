@@ -241,3 +241,16 @@ h4 {
     color: #32d296;
     padding: 1.2em;
 }
+
+.scheduleTableContainer tbody tr td:first-child:hover {
+    background-color: #fbfbc0;
+    color: black;
+    cursor: pointer;
+}
+
+.timeCell:hover {
+    background-color: #fbfbc0;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
