@@ -1,0 +1,243 @@
+section {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 1em;
+}
+
+h4 {
+    margin: 0;
+}
+
+.label  {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    font-weight: 900;
+    font-size: 20px;
+    box-sizing: border-box; /* Add this line */
+}
+
+.selectOrarButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.selectOrarButtonsContainer button {
+    background-color: #25975A;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 1em 2em;
+    border: none;
+    color: white;
+}
+
+.selectOrarButtonsContainer button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.switchModeContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.switchModeContainer div {
+    align-self: center;
+    font-weight: 900;
+}
+
+.switchButtonContainer {
+    background-color: #25975A;
+    width: 60px;
+    height: 34px;
+    align-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.switchButtonContainer:hover {
+    background-color: #bdbdbd;
+}
+
+.insideBox {
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    transition: right 0.3s ease;
+}
+
+.switchButtonContainer:hover .insideBox {
+    right: 29px;
+}
+
+.searchGroupInput {
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    padding-left: 40px;
+    height: 40px;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.searchInputIcon {
+    position: absolute;
+    z-index: 2;
+    width: 40px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.searchGroupContainer {
+    position: relative;
+    width: 100%;
+}
+
+.groupListContainer {
+    background-color: white;
+    color: #666;
+}
+
+.groupListContainer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    height: 5em;
+}
+
+.groupListContainer ul li {
+    padding: 0 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.groupListContainer ul li:hover {
+    background-color: #25975A;
+    color: white;
+    cursor: pointer;
+}
+
+.groupListContainer ul li:last-child {
+    border-bottom: none;
+}
+
+.selectDayContainer {
+    width: 100%;
+}
+
+.selectDayContainer select {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    height: 2.5em;
+    color: #666;
+}
+
+.selectWeekContainer {
+    width: 100%;
+}
+
+.selectWeekContainer select {
+    width: 100%;
+    font-size: 1em;
+    border: none;
+    height: 2.5em;
+    color: #666;
+}
+
+.scheduleTableContainer {
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: 3px 0 9px 5px rgba(26, 25, 26, 1);
+}
+
+.scheduleTableContainer thead tr th {
+    min-width: 1em;
+}
+
+.scheduleTableContainer tbody tr td {
+    border: 1px solid black;
+}
+
+.scheduleTableContainer thead tr th, .scheduleTableContainer tbody tr td:first-child {
+    background-color: #25975A;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.scheduleTableContainer thead tr th:first-child {
+    width: 7em;
+}
+
+.abbreviationMeaningContainer {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    width: 26em;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.abbreviationMeaningContainer p {
+    flex: 0 0 calc(25% - 0.75em);
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    width: fit-content;
+}
+
+.additionalInformationContainer {
+    display: flex;
+    gap: 1em;
+    color: white;
+    font-size: 0.8em;
+    margin: 1em 0;
+}
+
+.additionalInformationContainer div {
+    padding: 0.2em 0.7em;
+}
+
+.additionalInformationContainer div:hover {
+    cursor: pointer;
+}
+
+.additionalInformationContainer div:nth-child(1) {
+    background-color: #25975A;
+    border: 1px solid white;
+}
+
+.additionalInformationContainer div:nth-child(2) {
+    background-color: #f0506e;
+}
+
+.additionalInformationContainer div:nth-child(3) {
+    background-color: #7b4669;
+}
+
+.workingTimeInfoPanel {
+    background-color: #edfbf6;
+    color: #32d296;
+    padding: 1.2em;
+}
